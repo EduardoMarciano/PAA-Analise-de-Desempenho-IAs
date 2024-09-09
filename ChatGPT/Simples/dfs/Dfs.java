@@ -2,11 +2,11 @@
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-public class Graph {
+public class Dfs {
     private ArrayList<LinkedList<Integer>> adjList;
     private int numVertices;
 
-    public Graph(int numVertices) {
+    public Dfs(int numVertices) {
         this.numVertices = numVertices;
         adjList = new ArrayList<>(numVertices);
         for (int i = 0; i < numVertices; i++) {
@@ -14,7 +14,10 @@ public class Graph {
         }
     }
 
-    // Other methods (addEdge, removeEdge, etc.)
+    public void addEdge(int src, int dest) {
+        adjList.get(src).add(dest);
+        adjList.get(dest).add(src); // If the graph is undirected
+    }
 
     public void dfs(int startVertex) {
         boolean[] visited = new boolean[numVertices];
@@ -31,4 +34,15 @@ public class Graph {
             }
         }
     }
+
+    public static void main(String[] args) {
+        Dfs g = new Dfs(4);
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(1, 3);
+        g.dfs(0);
+    }
 }
+/*
+Score: 1
+*/

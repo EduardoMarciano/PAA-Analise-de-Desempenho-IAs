@@ -3,11 +3,11 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Graph {
+public class Bfs {
     private ArrayList<LinkedList<Integer>> adjList;
     private int numVertices;
 
-    public Graph(int numVertices) {
+    public Bfs(int numVertices) {
         this.numVertices = numVertices;
         adjList = new ArrayList<>(numVertices);
         for (int i = 0; i < numVertices; i++) {
@@ -15,7 +15,10 @@ public class Graph {
         }
     }
 
-    // Other methods (addEdge, removeEdge, etc.)
+    public void addEdge(int src, int dest) {
+        adjList.get(src).add(dest);
+        adjList.get(dest).add(src); // If the graph is undirected
+    }
 
     public void bfs(int startVertex) {
         boolean[] visited = new boolean[numVertices];
@@ -36,4 +39,14 @@ public class Graph {
             }
         }
     }
+    public static void main(String[] args) {
+        Bfs g = new Bfs(4);
+        g.addEdge(0, 1);
+        g.addEdge(0, 2);
+        g.addEdge(1, 3);
+        g.bfs(0);
+    }
 }
+/*
+Score: 1
+*/

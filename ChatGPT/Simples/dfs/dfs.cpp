@@ -42,7 +42,6 @@ int main() {
     Graph g(4);
     g.addEdge(0, 1);
     g.addEdge(0, 2);
-    g.addEdge(1, 2);
     g.addEdge(1, 3);
 
     std::cout << "DFS starting from vertex 0:" << std::endl;
@@ -50,3 +49,7 @@ int main() {
 
     return 0;
 }
+
+/*
+Score: 1
+*/

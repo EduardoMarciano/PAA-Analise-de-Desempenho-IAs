@@ -23,5 +23,19 @@ class Graph:
 g = Graph()
 g.add_vertex('A')
 g.add_vertex('B')
+g.add_vertex('D')
+g.add_vertex('F')
+
 g.add_edge('A', 'B')
+g.add_edge('A', 'A')
+g.add_edge('B', 'D')
+g.add_edge('D', 'B')
+
 print(g)
+"""
+Output:
+    {'A': ['B', 'A', 'A'], 'B': ['A', 'D', 'D'], 'D': ['B', 'B'], 'F': []}
+    Wrong: 'A': ['B', 'A', 'A']
+    Should be: 'A': ['B', 'A']...
+    Score: 0.75
+"""

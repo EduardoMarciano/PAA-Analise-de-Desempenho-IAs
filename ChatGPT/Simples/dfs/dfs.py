@@ -33,8 +33,17 @@ g = Graph()
 g.add_vertex('A')
 g.add_vertex('B')
 g.add_vertex('C')
+g.add_vertex('D')
 g.add_edge('A', 'B')
+g.add_edge('A', 'D')
 g.add_edge('B', 'C')
 
 print("DFS traversal starting from vertex 'A':")
 g.dfs('A')
+
+"""
+Output:
+    A B C D
+
+Score: 1
+"""
