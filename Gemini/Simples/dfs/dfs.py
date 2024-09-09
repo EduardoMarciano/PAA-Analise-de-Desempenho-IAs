@@ -3,10 +3,9 @@
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
-    'C': ['F'],
+    'C': [],
     'D': [],
-    'E': ['F'],
-    'F': []
+    'E': []
 }
 
 def dfs(graph, start):
@@ -35,3 +34,10 @@ def dfs(graph, start):
 
 result = dfs(graph, 'A')
 print(result)
+
+"""
+Output: ['A', 'D', 'C', 'E', 'B']
+Wrong:
+Should be: ['A', 'B', 'D', 'E', 'C']
+Score: 0.5
+"""

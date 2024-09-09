@@ -17,3 +17,9 @@ graph = [
     [0, 1, 0, 0, 0, 1],
     [0, 0, 1, 0, 1, 0]
 ]
+
+"""
+Weak implementation
+
+Score: 0.25
+"""

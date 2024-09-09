@@ -52,11 +52,21 @@ int main() {
     g.addEdge(0, 4);
     g.addEdge(1, 2);
     g.addEdge(1, 3);
-    g.addEdge(2, 3);
-    g.addEdge(3, 4);
 
     cout << "DFS traversal starting from vertex 0:\n";
     g.DFS(0);
 
     return 0;
 }
+
+/*
+Output:
+    DFS traversal starting from vertex 0:
+    0 4 1 3 2
+    
+Wrong: 0 4 1 3 2
+
+Should be: 0 1 2 3 4
+
+Score: 0.5
+*/

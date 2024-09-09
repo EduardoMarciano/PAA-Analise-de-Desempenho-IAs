@@ -26,11 +26,17 @@ def bfs(graph, start):
 graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
-    'C': ['F'],
+    'C': [],
     'D': [],
-    'E': ['F'],
-    'F': []
+    'E': []
 }
 
 result = bfs(graph, 'A')
 print(result)
+
+"""
+Output: ['E', 'B', 'D', 'A', 'C']
+Wrong:
+Should be: ['A', 'B', 'C', 'D', 'E']
+Score: 0.5
+"""

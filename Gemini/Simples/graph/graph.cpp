@@ -34,15 +34,24 @@ private:
 };
 
 int main() {
-    Graph g(5);
+    Graph g(3);
     g.addEdge(0, 1, 2);
-    g.addEdge(0, 4, 6);
+    g.addEdge(0, 0, 6);
     g.addEdge(1, 2, 3);
-    g.addEdge(1, 3, 4);
-    g.addEdge(2, 3, 5);
-    g.addEdge(3, 4, 7);
 
     g.printGraph();
 
     return 0;
 }
+/*
+Output:
+    0 -> (1, 2) (0, 6) (0, 6) 
+    1 -> (0, 2) (2, 3) 
+    2 -> (1, 3) 
+    
+Wrong: 0 -> (1, 2) (0, 6) (0, 6) 
+
+Should be: (1, 2) (0, 6)
+
+Score: 0.75
+*/
