@@ -2,17 +2,29 @@
 
 import java.util.*;
 
-public class Graph<T> {
+public class Bfs<T> {
     private Map<T, List<T>> adjacencyList;
 
-    public Graph() {
+    public Bfs() {
         adjacencyList = new HashMap<>();
     }
 
-    // Previous graph implementation methods (addVertex, addEdge, removeEdge, getNeighbors, getVertices) remain the same
+    public void addEdge(T source, T destination) {
+        if (!adjacencyList.containsKey(source)) {
+            addVertex(source);
+        }
+        if (!adjacencyList.containsKey(destination)) {
+            addVertex(destination);
+        }
+        adjacencyList.get(source).add(destination);
+    }
 
-    public List<T> depthFirstSearch(T startVertex) {
-        // Existing DFS implementation
+    public void addVertex(T vertex) {
+        adjacencyList.putIfAbsent(vertex, new ArrayList<>());
+    }
+    
+    public List<T> getNeighbors(T vertex) {
+        return adjacencyList.get(vertex);
     }
 
     public List<T> breadthFirstSearch(T startVertex) {
@@ -37,5 +49,19 @@ public class Graph<T> {
 
         return result;
     }
+        public static void main(String[] args) {
+        Bfs<String> g = new Bfs<>();
+
+        g.addEdge("A", "B"); 
+        g.addEdge("A", "C"); 
+        g.addEdge("C", "D");
+
+        List<String> bfs = g.breadthFirstSearch("A");
+
+        System.out.println("" + bfs);
+    }
 }
 
+/*
+Score: 1
+*/

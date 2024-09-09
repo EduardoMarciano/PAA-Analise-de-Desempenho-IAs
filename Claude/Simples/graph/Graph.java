@@ -1,5 +1,12 @@
 // How to implement a graph? in Java
 
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+import java.util.Set;
+
+
 public class Graph<T> {
     private Map<T, List<T>> adjacencyList;
 
@@ -34,4 +41,19 @@ public class Graph<T> {
     public Set<T> getVertices() {
         return adjacencyList.keySet();
     }
+
+    public static void main(String[] args) {
+
+        Graph<String> g = new Graph<>();
+
+        g.addEdge("a", "b");
+        g.addEdge("b", "a");
+        g.addEdge("a", "a");
+        System.out.println("a: " + g.getNeighbors("a")); 
+        System.out.println("b: " + g.getNeighbors("b"));  
+    }
 }
+
+/*
+Score: 1
+*/

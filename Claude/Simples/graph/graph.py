@@ -23,5 +23,17 @@ graph.add_vertex('A')
 graph.add_vertex('B')
 graph.add_vertex('C')
 graph.add_edge('A', 'B')
-graph.add_edge('B', 'C')
+graph.add_edge('B', 'A')
+graph.add_edge('C', 'C')
 graph.print_graph()
+
+"""
+Output:
+    A : ['B', 'B']
+    B : ['A', 'A']
+    C : ['C', 'C']
+
+Wrong: C : ['C', 'C']
+Should be: C : ['C']
+Score: 0.75
+"""

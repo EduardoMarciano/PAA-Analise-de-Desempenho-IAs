@@ -38,6 +38,7 @@ graph.add_vertex('B')
 graph.add_vertex('C')
 graph.add_vertex('D')
 graph.add_vertex('E')
+
 graph.add_edge('A', 'B')
 graph.add_edge('A', 'C')
 graph.add_edge('B', 'D')
@@ -45,3 +46,20 @@ graph.add_edge('B', 'E')
 
 print("Depth-First Search (DFS) traversal:")
 graph.dfs('A')
+
+"""
+Output: Depth-First Search (DFS) traversal:
+        A
+        C
+        B
+        E
+        D
+Wrong:
+Should be: Depth-First Search (DFS) traversal:
+        A
+        B
+        D
+        E
+        C
+Score: 0.5
+"""
