@@ -44,4 +44,7 @@ public class CountingSort {
 Output:
     Original array: [4, 2, 2, 8, 3, 3, 1]
     Sorted array: [1, 2, 2, 3, 3, 4, 8]
+
+Wrong:  is not stable
+Score: 0.75
 */

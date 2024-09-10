@@ -40,3 +40,7 @@ public class CountingSort {
         System.out.println(Arrays.toString(arr)); // Output: [1, 2, 2, 3, 4, 5, 6, 6]
     }
 }
+
+/*
+Score: 1
+*/

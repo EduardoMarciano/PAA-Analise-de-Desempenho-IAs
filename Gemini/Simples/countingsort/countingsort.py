@@ -39,3 +39,9 @@ def counting_sort(arr):
 arr = [4, 2, 10, 8, 3, 1, 7, 6, 5, 9]
 sorted_arr = counting_sort(arr)
 print(sorted_arr)
+
+"""
+Output:1 2 3 4 5 6 7 8 9 10
+Wrong:  is not stable
+Score: 0.75
+"""

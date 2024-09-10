@@ -1,5 +1,7 @@
 // Input: How to implement the countingsort sort algorithm? in Java
 
+import java.util.Arrays;
+
 public class CountingSort {
     public static void countSort(int[] arr) {
         int n = arr.length;
@@ -44,3 +46,6 @@ public class CountingSort {
         System.out.println(Arrays.toString(arr));
     }
 }
+/*
+Score: 1
+*/

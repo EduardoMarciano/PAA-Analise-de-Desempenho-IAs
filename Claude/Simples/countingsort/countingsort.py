@@ -35,3 +35,12 @@ def counting_sort(arr):
         i -= 1
     
     return output_arr
+
+lista = [1, 5, 2, 25, 40, 10, 0]
+
+counting_sort(lista)
+print(lista)
+
+"""
+Score: 1
+"""

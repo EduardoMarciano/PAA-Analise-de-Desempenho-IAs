@@ -31,7 +31,7 @@ void countingSort(std::vector<int>& arr) {
 }
 
 int main() {
-    std::vector<int> arr = {4, 2, 2, 8, 3, 3, 1};
+    std::vector<int> arr = {4, 2, 2, 8, 3, 3, 1, 0, 0, 0, -1};
 
     countingSort(arr);
 
@@ -46,5 +46,8 @@ int main() {
 
 /*
 Output:
-    Sorted array: 1 2 2 3 3 4 8 
+    Sorted array: -1 0 0 0 1 2 2 3 3 4 8
+    
+Wrong:  is not stable
+Score: 0.75
 */

@@ -29,7 +29,7 @@ def counting_sort(arr):
     return output
 
 # Example usage
-arr = [4, 2, 2, 8, 3, 3, 1]
+arr = [4, 2, 2, 8, 3, 3, 1, 0, -1, 1, 1]
 sorted_arr = counting_sort(arr)
 print(sorted_arr)  # Output: [1, 2, 2, 3, 3, 4, 8]
 
@@ -37,4 +37,5 @@ print(sorted_arr)  # Output: [1, 2, 2, 3, 3, 4, 8]
 """
 Output:
     [1, 2, 2, 3, 3, 4, 8]
+Score: 1
 """
