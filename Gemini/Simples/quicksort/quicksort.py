@@ -56,3 +56,11 @@ def median_of_three(arr, left, right):
         arr[left], arr[mid] = arr[mid], arr[left]
     return mid
 
+arr = [4, 2, 10, 8]
+sorted_arr = quicksort(arr)
+print(sorted_arr)
+
+"""
+runtime error
+Score: 0
+"""

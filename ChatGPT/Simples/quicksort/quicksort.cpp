@@ -58,5 +58,7 @@ int main() {
 
 /*
 Output:
-    Sorted array: 1 5 7 8 9 10 
+    Sorted array: 1 5 7 8 9 10
+
+Score: 1
 */

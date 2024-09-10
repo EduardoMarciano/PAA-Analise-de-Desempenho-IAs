@@ -18,4 +18,6 @@ print(sorted_arr)
 """
 Output:
 [1, 1, 2, 3, 6, 8, 10]
+
+Score: 1
 """

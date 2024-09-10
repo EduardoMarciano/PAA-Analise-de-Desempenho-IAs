@@ -39,3 +39,7 @@ if __name__ == "__main__":
     print("Unsorted array:", test_array)
     sorted_array = sort(test_array)
     print("Sorted array:", sorted_array)
+
+"""
+Score: 1
+"""

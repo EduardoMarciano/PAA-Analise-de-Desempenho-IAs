@@ -49,3 +49,7 @@ public class QuickSort {
         System.out.println();
     }
 }
+
+/*
+Score: 1
+*/
