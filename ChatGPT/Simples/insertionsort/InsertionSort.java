@@ -31,7 +31,7 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        int[] array = {12, 11, 13, 5, 6};
+        int[] array = {12, 11, 13, 5, 6, 0, -23, 5};
         System.out.println("Original array:");
         printArray(array);
         
@@ -45,7 +45,9 @@ public class InsertionSort {
 /*
 Output:
     Original array:
-    12 11 13 5 6 
+    12 11 13 5 6 0 -23 5 
     Sorted array:
-    5 6 11 12 13 
+    -23 0 5 5 6 11 12 13
+
+Score: 1
 */

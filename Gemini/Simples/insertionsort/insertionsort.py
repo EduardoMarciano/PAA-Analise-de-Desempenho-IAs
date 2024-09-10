@@ -26,3 +26,15 @@ def insertion_sort(arr):
     arr[j + 1] = key
 
   return arr
+
+lista = [-2, 0, 1, 38, 2, 8, 4, 5, 3, 25, 2]
+lista = insertion_sort(lista)
+
+print(lista)
+
+"""
+Output:
+  [-2, 0, 1, 2, 2, 3, 4, 5, 8, 25, 38]
+
+Score: 1
+"""

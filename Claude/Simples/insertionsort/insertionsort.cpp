@@ -1,5 +1,6 @@
 // Input: How to implement the insertionsort sort algorithm? in c++
 
+#include <cstdio>
 #include <vector>
 
 void insertionSort(std::vector<int>& arr) {
@@ -19,8 +20,29 @@ void insertionSort(std::vector<int>& arr) {
 }
 
 int main() {
-    std::vector<int> arr = {64, 34, 25, 12, 22, 11, 90};
+    std::vector<int> arr = {64, 34, 25, 12, 22, 11, 90, -25, 0, 0 , 2 , 2};
     insertionSort(arr);
+    for(int i : arr){
+        printf("%i \n", i);
+    }
     
     return 0;
 }
+
+/*
+Output:
+    -25 
+    0 
+    0 
+    2 
+    2 
+    11 
+    12 
+    22 
+    25 
+    34 
+    64 
+    90
+
+Score: 1
+*/

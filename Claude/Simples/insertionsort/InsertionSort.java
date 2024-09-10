@@ -27,7 +27,7 @@ public class InsertionSort {
 
     // Example usage
     public static void main(String[] args) {
-        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        int[] arr = {64, 34, 25, 12, 22, 11, 90, 0, 0, -23};
         System.out.println("Unsorted array:");
         printArray(arr);
         
@@ -37,3 +37,13 @@ public class InsertionSort {
         printArray(arr);
     }
 }
+
+/*
+Output:
+    Unsorted array:
+    64 34 25 12 22 11 90 0 0 -23 
+    Sorted array:
+    -23 0 0 11 12 22 25 34 64 90 
+
+Score: 1
+*/

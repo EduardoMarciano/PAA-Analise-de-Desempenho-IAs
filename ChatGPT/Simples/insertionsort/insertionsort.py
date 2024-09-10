@@ -15,12 +15,13 @@ def insertion_sort(arr):
         arr[j + 1] = key
 
 # Example usage
-arr = [12, 11, 13, 5, 6]
+arr = [12, 11, 13, 5, 6, 5, -5, -24]
 insertion_sort(arr)
 print("Sorted array:", arr)
 
 
 """
 Output:
-Sorted array: [5, 6, 11, 12, 13]
+    Sorted array: [-24, -5, 5, 5, 6, 11, 12, 13]
+Score: 1
 """

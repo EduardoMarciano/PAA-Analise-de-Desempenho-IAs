@@ -26,7 +26,7 @@ for (int i = 1; i < n; i++) {
 }
 
 int main() {
-vector<int> arr = {12, 11, 13, 5, 6};
+vector<int> arr = {12, 11, 13, 5, 6, -23, 0, 20, 20, 21};
 int n = arr.size();
 
 cout << "Unsorted array: \n";
@@ -42,3 +42,12 @@ for (int i = 0; i < n; i++)
 return 0;
 
 }
+/*
+Output:
+    Unsorted array: 
+    12 11 13 5 6 -23 0 20 20 21 
+    Sorted array: 
+    -23 0 5 6 11 12 13 20 20 21
+
+Score: 1
+*/

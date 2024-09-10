@@ -26,7 +26,7 @@ void printArray(int arr[], int size) {
 }
 
 int main() {
-    int arr[] = {12, 11, 13, 5, 6};
+    int arr[] = {12, 11, 13, 5, 6, 5, 2, 1, 0, -23};
     int n = sizeof(arr) / sizeof(arr[0]);
     insertionSort(arr, n);
     printArray(arr, n);
@@ -35,5 +35,6 @@ int main() {
 
 /*
 Output:
-    5 6 11 12 13 
+    -23 0 1 2 5 5 6 11 12 13
+Score: 1
 */
