@@ -45,4 +45,6 @@ print("Sorted array:", arr)
 """
 Output:
 Sorted array: [2, 24, 45, 66, 75, 90, 170, 802]
+
+Score: 1
 """

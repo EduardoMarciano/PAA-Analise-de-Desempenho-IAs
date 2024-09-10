@@ -61,3 +61,7 @@ def counting_sort(arr, n, exp):
 example_array = [170, 45, 75, 90, 802, 24, 2, 66]
 sorted_array = radix_sort(example_array)
 print(sorted_array)  # Output: [2, 24, 45, 66, 75, 90, 170, 802]
+
+"""
+Score: 1
+"""

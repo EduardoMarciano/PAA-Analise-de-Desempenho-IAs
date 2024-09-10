@@ -44,3 +44,12 @@ def counting_sort(arr, exp):
 
     for i in range(n):
         arr[i] = output[i]
+
+
+lista = [0, 1, 38, 2, 8, 4, 5, 3, 25, 2]
+lista = radix_sort(lista)
+
+print(lista)
+"""
+Score: 1
+"""
